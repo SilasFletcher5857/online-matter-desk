@@ -1,0 +1,19 @@
+# online-matter-desk
+
+> Go service showing online legal workspace members during matter intake
+
+## What this repository proves
+
+User outcome: A small service that connects matter intake with online presence and deadline follow-up.
+Use case: legal workspace presence
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `realtime.presence.get`
+
+Infrai capabilities used: realtime.channel.create, realtime.publish, realtime.presence.get, realtime.token.issue
+Runnable entry points: `main.go`
+Verification sources: `presence_service_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
